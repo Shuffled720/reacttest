@@ -1,0 +1,37 @@
+/* mainContainer:hover .side_div {
+  animation: animation1 0.7s ease-in-out forwards;
+
+} */
+
+
+
+
+.grid {
+  /* display: flex; */
+  margin-left: -300px;
+
+  animation: animation1 10 ease-in-out 3000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+
+  /* animation-play-state: paused; */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+@keyframes animation1 {
+  0% {
+    display: flex;
+    margin-left: -300px;
+    position: relative;
+  }
+
+  100% {
+
+    display: grid;
+    margin-left: 0px;
+
+    grid-gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
